@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       steps {
         sh ''' cd ../../../../..
- cd home/sam-admin/\\\'Untitled Folder 1\\\'
+ cd home/sam-admin/\'Untitled Folder 1\'
  g++ binary.cpp'''
       }
     }
@@ -12,7 +12,7 @@ pipeline {
     stage('test') {
       steps {
         sh '''cd ../../../../..
-cd home/sam-admin/\\\'Untitled Folder 1\\\'
+cd home/sam-admin/\'Untitled Folder 1\'
 ./a.out'''
       }
     }
